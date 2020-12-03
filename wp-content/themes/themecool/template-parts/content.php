@@ -24,12 +24,6 @@
 			</div>
 			<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
 			<div class="entry-meta">
-				<a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-					<?php echo get_avatar( get_the_author_meta( 'user_email' ), 22 ); ?>
-					<span class="by"><?php esc_html_e( 'by', 'eightydays-lite' ); ?></span>
-					<?php the_author(); ?>
-				</a>
-				<span class="separator">/</span>
 				<?php eightydays_posted_on(); ?>
 			</div>
 		</header>
